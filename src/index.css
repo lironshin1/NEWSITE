@@ -1,0 +1,24 @@
+/* איפוס בסיסי ונקי */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100vh;
+  background-color: #0f172a;
+  overflow: hidden; /* מונע גלילה של החלון הראשי עצמו */
+}
+
+/* השארת גלילה אנכית פנימית עדינה רק איפה שצריך (כמו בלוח המשימות) */
+.overflow-y-auto {
+  overflow-y: auto !important;
+}
+
+/* הפתרון המושלם: העלמת פסי הגלילה המובנים של אלקטרון כדי שלא יופיעו סתם */
+::-webkit-scrollbar {
+  width: 0px !important;  /* מעלים את פס הגלילה האנכי של החלון */
+  height: 0px !important; /* מעלים את פס הגלילה האופקי של החלון */
+}

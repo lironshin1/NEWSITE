@@ -1,0 +1,5 @@
+node_modules/
+June-win32-x64/
+dist/
+build/
+*.exe

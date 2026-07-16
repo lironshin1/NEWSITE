@@ -1,0 +1,290 @@
+{
+  "workspaces": [
+    {
+      "id": "w1",
+      "name": "עבודות תמלול",
+      "color": "#ef4444",
+      "isCollapsed": false
+    },
+    {
+      "id": "w-1783613271824",
+      "name": "WORKSPACE חדש",
+      "color": "#64748b",
+      "isCollapsed": false
+    },
+    {
+      "id": "w-1783706963628",
+      "name": "WORKSPACE חדש",
+      "color": "#64748b",
+      "isCollapsed": false
+    }
+  ],
+  "boards": [
+    {
+      "id": "b-1783613273120",
+      "workspaceId": "w-1783613271824",
+      "name": "לוח חדש",
+      "columns": {
+        "item": "ITEM",
+        "status": "סטטוס",
+        "text": "טקסט",
+        "number": "מספר"
+      }
+    },
+    {
+      "id": "b-1783613273736",
+      "workspaceId": "w-1783613271824",
+      "name": "לוח חדש",
+      "columns": {
+        "item": "ITEM",
+        "status": "סטטוס",
+        "text": "טקסט",
+        "number": "מספר"
+      }
+    },
+    {
+      "id": "b-1783535461280",
+      "workspaceId": "w1",
+      "name": "תמלול עדי",
+      "columns": {
+        "item": "ITEM",
+        "status": "סטטוס",
+        "text": "טקסט",
+        "number": "תוספת אחוזים",
+        "col-3": "מחיר לשעה",
+        "col-6": "סך לתשלום"
+      }
+    },
+    {
+      "id": "b-1783612572114",
+      "workspaceId": "w1",
+      "name": "שדג",
+      "columns": {
+        "item": "ITEM",
+        "status": "סטטוס",
+        "text": "טקסט",
+        "number": "מספר"
+      }
+    },
+    {
+      "id": "b-1783706467420",
+      "workspaceId": "w1",
+      "name": "לוח חדש",
+      "columns": {
+        "item": "ITEM",
+        "status": "סטטוס",
+        "text": "טקסט",
+        "number": "מספר"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-1783535461280",
+      "boardId": "b-1783535461280",
+      "name": "קבו;;;;;;;;;;;;;;צה 1",
+      "color": "#3b82f6",
+      "isCollapsed": false,
+      "items": [
+        {
+          "id": "i-1783706456829",
+          "name": "עבודה ראשונה",
+          "status": "",
+          "textValue": "",
+          "numberValue": "",
+          "col-5": {
+            "hours": "1",
+            "minutes": "30",
+            "seconds": "0"
+          },
+          "col-3": "",
+          "col-1": "high",
+          "col-2": "שדגשדגשדג",
+          "col-1783707423711": "10",
+          "col-1783707682417": "0"
+        }
+      ]
+    },
+    {
+      "id": "g-1783612572114",
+      "boardId": "b-1783612572114",
+      "name": "קבזבזסבזסבסזבוצה 1",
+      "color": "#3b82f6",
+      "isCollapsed": false,
+      "items": []
+    },
+    {
+      "id": "g-1783612574771",
+      "boardId": "b-1783612574771",
+      "name": "קבוצה 1",
+      "color": "#3b82f6",
+      "isCollapsed": false,
+      "items": []
+    },
+    {
+      "id": "g-1783612811810",
+      "boardId": "b-1783612811810",
+      "name": "עעעעעעעעעעעעע",
+      "color": "#3b82f6",
+      "isCollapsed": false,
+      "items": [
+        {
+          "id": "i-1783613842212",
+          "name": "שדג"
+        },
+        {
+          "id": "i-1783613842397",
+          "name": "שג"
+        }
+      ]
+    },
+    {
+      "id": "g-1783680957224",
+      "boardId": "b-1783612811810",
+      "name": "קבוצה חדשה",
+      "color": "#ef4444",
+      "isCollapsed": false,
+      "items": [
+        {
+          "id": "i-1783683237373",
+          "name": "כגעגכע",
+          "status": "",
+          "textValue": "",
+          "numberValue": ""
+        }
+      ]
+    },
+    {
+      "id": "g-1783613100914",
+      "boardId": "b-1783613100914",
+      "name": "דגכדגכדגכ",
+      "color": "#3b82f6",
+      "isCollapsed": false,
+      "items": [
+        {
+          "id": "i-1783613845797",
+          "name": "שדג"
+        },
+        {
+          "id": "i-1783613846205",
+          "name": "6"
+        },
+        {
+          "id": "i-1783613846398",
+          "name": "וט"
+        },
+        {
+          "id": "i-1783613846557",
+          "name": "65"
+        }
+      ]
+    },
+    {
+      "id": "g-1783613104289",
+      "boardId": "b-1783613100914",
+      "name": "קבוצה חדשה",
+      "color": "#10b981",
+      "isCollapsed": false,
+      "items": []
+    },
+    {
+      "id": "g-1783613270248",
+      "boardId": "b-1783613270248",
+      "name": "קבוצה 1",
+      "color": "#3b82f6",
+      "isCollapsed": false,
+      "items": [
+        {
+          "id": "i-1783613850085",
+          "name": ";;;;;;;;;;;;;;;;;;"
+        }
+      ]
+    },
+    {
+      "id": "g-1783613273120",
+      "boardId": "b-1783613273120",
+      "name": "קבוצה 1",
+      "color": "#3b82f6",
+      "isCollapsed": false,
+      "items": []
+    },
+    {
+      "id": "g-1783613273736",
+      "boardId": "b-1783613273736",
+      "name": "קבוצה 1",
+      "color": "#3b82f6",
+      "isCollapsed": false,
+      "items": []
+    },
+    {
+      "id": "g-1783613861676",
+      "boardId": "b-1783612572114",
+      "name": "קבוצה חדשה",
+      "color": "#f59e0b",
+      "isCollapsed": false,
+      "items": []
+    },
+    {
+      "id": "g-1783614064128",
+      "boardId": "b-1783614064128",
+      "name": "קבוצה 1",
+      "color": "#3b82f6",
+      "isCollapsed": false,
+      "items": [
+        {
+          "id": "i-1783614126876",
+          "name": "פרויקט 1שדגשד",
+          "status": "low",
+          "textValue": "",
+          "numberValue": "231231"
+        },
+        {
+          "id": "i-1783664879179",
+          "name": "שלום",
+          "status": "",
+          "textValue": "",
+          "numberValue": ""
+        },
+        {
+          "id": "i-1783664886034",
+          "name": "לעשות משהו",
+          "status": "",
+          "textValue": "",
+          "numberValue": ""
+        }
+      ]
+    },
+    {
+      "id": "g-1783706467420",
+      "boardId": "b-1783706467420",
+      "name": "קבוצה 1",
+      "color": "#3b82f6",
+      "isCollapsed": false,
+      "items": []
+    },
+    {
+      "id": "g-1783706937873",
+      "boardId": "b-1783535461280",
+      "name": "קבוצה חדשה",
+      "color": "#ef4444",
+      "isCollapsed": false,
+      "items": []
+    }
+  ],
+  "memos": "",
+  "tabs": [
+    {
+      "id": "tasks-1783610962200",
+      "title": "ניהול משימות 1",
+      "type": "tasks",
+      "activeBoardId": "b-1783535461280"
+    },
+    {
+      "id": "tasks-1783707938790",
+      "title": "ניהול משימות 2",
+      "type": "tasks",
+      "activeBoardId": null
+    }
+  ],
+  "activeTabId": "tasks-1783610962200"
+}

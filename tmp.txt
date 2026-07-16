@@ -1,0 +1,117 @@
+193:    const rect = e.currentTarget.getBoundingClientRect();
+317:                            title: t('monday.confirm_delete_title'),
+318:                            message: t('monday.confirm_delete_message'),
+366:            confirmText={t('monday.yes')}
+367:            cancelText={t('monday.no')}
+389:    const rect = e.currentTarget.getBoundingClientRect();
+451:  if (hoursMatch) totalSeconds += parseInt(hoursMatch[1]) * 3600;
+452:  if (minsMatch) totalSeconds += parseInt(minsMatch[1]) * 60;
+453:  if (secsMatch) totalSeconds += parseInt(secsMatch[1]);
+487:  React.useEffect(() => {
+496:    const totalSeconds = (parseInt(hours || '0') * 3600) + (parseInt(minutes || '0') * 60) + parseInt(seconds || '0');
+518:              top: anchorEl.getBoundingClientRect().bottom + 4,
+519:              left: anchorEl.getBoundingClientRect().left,
+594:            const val = getCellValue(parentTask, refColId, columns, subtaskColumns, new Set(visited), undefined, true);
+616:            const vals = task.subtasks.map(sub => getCellValue(sub, refColId, subtaskColumns || columns, undefined, new Set(visited), task, false));
+639:          const val = getCellValue(task, refPath, columns, subtaskColumns, new Set(visited), parentTask, isParentContext);
+688:    const values = subtasksToInclude.map(sub => Number(getCellValue(sub, targetColumnId, subtaskColumns || columns, undefined, new Set(visited), task)) || 0);
+703:  const result = getCellValue(task, colId, columns, subtaskColumns, new Set(), parentTask);
+727:  const result = getCellValue(task, colId, columns, subtaskColumns, new Set(), parentTask);
+799:  useEffect(() => {
+802:      inputRef.current.select();
+807:  useEffect(() => {
+825:            onClick={() => onToggleSelect(task)}
+864:              title={t('monday.add_task')}
+871:              title={t('monday.delete')}
+1021:                              const rect = e.currentTarget.getBoundingClientRect();
+1051:                        const rect = e.currentTarget.getBoundingClientRect();
+1250:  const [collapsedGroups, setCollapsedGroups] = useState<Set<string>>(new Set());
+1251:  const [selectedTasks, setSelectedTasks] = useState<Set<string>>(new Set());
+1277:  useEffect(() => {
+1290:  useEffect(() => {
+1303:          sortedOwnedBoards.sort((a, b) => {
+1329:      const wsUnsub = onSnapshot(doc(db, 'workspaces', user.uid), async (docSnap) => {
+1395:      const unsubOwned = onSnapshot(qOwned, (snapshot) => {
+1405:      const unsubShared = onSnapshot(qShared, (sharedSnap) => {
+1431:  useEffect(() => {
+1498:  React.useEffect(() => {
+1530:    e.preventDefault();
+1552:      title: t('monday.confirm_delete_title'),
+1553:      message: t('monday.confirm_delete_message'),
+1584:    if (target.closest('button, input, [role="button"], .cursor-col-resize, .cursor-grab')) return;
+1588:    setPanScrollLeft(boardRef.current?.scrollLeft || 0);
+1593:    e.preventDefault();
+1605:      const next = new Set(prev);
+1616:      const next = new Set(prev);
+1632:      const next = new Set(prev);
+1654:      if (t.subtasks.length > 0) ids = ids.concat(getAllTaskIds(t.subtasks));
+1663:      title: t('monday.confirm_delete_title'),
+1664:      message: t('monday.confirm_delete_message'),
+1680:        setSelectedTasks(new Set());
+1743:    setSelectedTasks(new Set());
+1782:            return { ...t, subtasks: addSubtasksToTarget(t.subtasks) };
+1788:          tasks: addSubtasksToTarget(g.tasks)
+1794:    setSelectedTasks(new Set());
+1825:    setSelectedTasks(new Set());
+1828:  React.useEffect(() => {
+1863:          const currentUpdate = updatesQueue.shift()!;
+2044:      title: t('monday.confirm_delete_title'),
+2045:      message: t('monday.confirm_delete_message'),
+2206:      title: t('monday.confirm_delete_title'),
+2207:      message: t('monday.confirm_delete_message'),
+2214:            alert('Failed to delete board. Please try again later.');
+2365:          <div className="text-slate-500 font-medium">{t('monday.loading') || 'Loading...'}</div>
+2379:        confirmText={t('monday.yes')}
+2380:        cancelText={t('monday.no')}
+2392:          <span className="font-bold text-lg truncate">{t('monday.title')}</span>
+2457:                              {t('monday.move_up')}
+2463:                              {t('monday.move_down')}
+2470:                              <Trash2 className="w-3.5 h-3.5" /> {t('monday.delete')}
+2489:            {t('monday.new_board')}
+2557:                placeholder={t('monday.search')} 
+2570:                  onClick={() => signOut(auth)}
+2586:            <Plus className="w-3.5 h-3.5" /> {t('monday.new_task')}
+2589:          <button className="flex items-center gap-1.5 text-xs text-slate-600 hover:bg-slate-100 px-2 py-1.5 rounded"><Filter className="w-3.5 h-3.5" /> {t('monday.filter')}</button>
+2590:          <button className="flex items-center gap-1.5 text-xs text-slate-600 hover:bg-slate-100 px-2 py-1.5 rounded"><ArrowUpDown className="w-3.5 h-3.5" /> {t('monday.sort')}</button>
+2591:          <button onClick={() => setShowAutomations(true)} className="flex items-center gap-1.5 text-xs text-slate-600 hover:bg-slate-100 px-2 py-1.5 rounded"><Zap className="w-3.5 h-3.5" /> {t('monday.automations')}</button>
+2594:            <div className="text-xs text-slate-400">{t('monday.add_column')}:</div>
+2595:            <button onClick={() => handleAddColumn('status')} className="p-1.5 hover:bg-slate-100 rounded text-slate-600" title={t('monday.status')}><CheckSquare className="w-3.5 h-3.5" /></button>
+2596:            <button onClick={() => handleAddColumn('priority')} className="p-1.5 hover:bg-slate-100 rounded text-slate-600" title={t('monday.priority')}><Flag className="w-3.5 h-3.5" /></button>
+2597:            <button onClick={() => handleAddColumn('date')} className="p-1.5 hover:bg-slate-100 rounded text-slate-600" title={t('monday.date')}><Calendar className="w-3.5 h-3.5" /></button>
+2598:            <button onClick={() => handleAddColumn('person')} className="p-1.5 hover:bg-slate-100 rounded text-slate-600" title={t('monday.owner')}><User className="w-3.5 h-3.5" /></button>
+2599:            <button onClick={() => handleAddColumn('text')} className="p-1.5 hover:bg-slate-100 rounded text-slate-600" title={t('monday.text')}><Type className="w-3.5 h-3.5" /></button>
+2715:                          value={activeBoard.taskColumnTitle || t('monday.task')}
+2720:                          onMouseDown={(e) => handleColumnResizeStart(e, 'task-column', activeBoard.taskColumnWidth || 300)}
+2754:                                  const rect = e.currentTarget.getBoundingClientRect();
+2772:                              onMouseDown={(e) => handleColumnResizeStart(e, col.id, col.width || 140)}
+2785:                            const rect = e.currentTarget.getBoundingClientRect();
+2854:                                <Plus className="w-4 h-4" /> {t('monday.add_task')}
+2871:            <Plus className="w-5 h-5" /> {t('monday.add_group')}
+3170:                      if (selectedGroupIds > 0) parts.push(`${selectedGroupIds} ${t('monday.groups_selected')}`);
+3171:                      if (mainTasksCount > 0) parts.push(`${mainTasksCount} ${t('monday.items_selected')}`);
+3172:                      if (subTasksCount > 0) parts.push(`${subTasksCount} ${t('monday.subitems_selected')}`);
+3177:                    onClick={() => setSelectedTasks(new Set())}
+3180:                    {t('monday.deselect_all')}
+3206:                  <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 group-hover:text-white">{t('monday.move_to')}</span>
+3211:                onClick={() => setSelectedTasks(new Set())}
+3256:                          {t('monday.move_to_group')}
+3276:                          {t('monday.move_to_item')}
+3287:                            <span className="truncate">{task.content || t('monday.task')}</span>
+3334:                      <span>{t('monday.edit_column')}</span>
+3347:                      <span>{t('monday.change_column_type')}</span>
+3367:                    <span>{t('monday.move_left')}</span>
+3382:                    <span>{t('monday.move_right')}</span>
+3392:                    <span>{t('monday.delete_column')}</span>
+3405:                    <span>{t('monday.change_column_type')}</span>
+3408:                    { type: 'text', icon: TypeIcon, label: t('monday.text') || 'Text' },
+3409:                    { type: 'status', icon: CheckCircle2, label: t('monday.status') || 'Status' },
+3410:                    { type: 'priority', icon: Flag, label: t('monday.priority') || 'Priority' },
+3411:                    { type: 'date', icon: CalendarIcon, label: t('monday.date') || 'Date' },
+3412:                    { type: 'person', icon: UserIcon, label: t('monday.person') || 'Person' },
+3413:                    { type: 'number', icon: HashIcon, label: t('monday.number') || 'Number' },
+3468:                { type: 'text', icon: TypeIcon, label: t('monday.text') || 'Text' },
+3469:                { type: 'status', icon: CheckCircle2, label: t('monday.status') || 'Status' },
+3470:                { type: 'priority', icon: Flag, label: t('monday.priority') || 'Priority' },
+3471:                { type: 'date', icon: CalendarIcon, label: t('monday.date') || 'Date' },
+3472:                { type: 'person', icon: UserIcon, label: t('monday.person') || 'Person' },
+3473:                { type: 'number', icon: HashIcon, label: t('monday.number') || 'Number' },

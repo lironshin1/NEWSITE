@@ -1,0 +1,46 @@
+{
+  "workspaces": [
+    {
+      "id": "w1",
+      "name": "MAIN WORKSPACE",
+      "color": "#64748b"
+    },
+    {
+      "id": "w-1783535462105",
+      "name": "WORKSPACE חדש",
+      "color": "#64748b"
+    },
+    {
+      "id": "w-1783535462512",
+      "name": "WORKSPACE חדש",
+      "color": "#64748b"
+    }
+  ],
+  "boards": [
+    {
+      "id": "b-1783535461280",
+      "workspaceId": "w1",
+      "name": "לוח חדש"
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-1783535461280",
+      "boardId": "b-1783535461280",
+      "name": "קבוצה 1",
+      "color": "#3b82f6",
+      "isCollapsed": false,
+      "items": []
+    }
+  ],
+  "memos": "",
+  "tabs": [
+    {
+      "id": "tasks-1783535446982",
+      "title": "📋 ניהול משימות",
+      "type": "tasks",
+      "activeBoardId": "b-1783535461280"
+    }
+  ],
+  "activeTabId": "tasks-1783535446982"
+}
