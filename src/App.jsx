@@ -81,7 +81,7 @@ function MainLayout() {
   
   const columns = currentBoard?.columns || { 
     item: 'ITEM', status: 'סטטוס', text: 'טקסט', number: 'מספר',
-    date: 'צי�� זמן', time: 'זמן', formula: 'נוסחה'
+    date: 'ציר זמן', time: 'זמן', formula: 'נוסחה'
   };
 
   const extraFixedColumnsWidth = 40 + 8;
@@ -187,8 +187,8 @@ function MainLayout() {
 
   useEffect(() => {
     function handleGlobalClick(event) {
-      if (!event.target.closest('.menu-container') && !event.target.closest('.picker-container') && !event.target.closest('.global-floating-menu')) {
-        setActiveMenu(null); setOpenColorPickerId(null); setActiveColumnMenu(null); setIsChangeTypeOpen(false); setIsAddColMenuOpen(false);
+      if (!event.target.closest('.file-menu-container') && !event.target.closest('.menu-container') && !event.target.closest('.picker-container') && !event.target.closest('.global-floating-menu')) {
+        setIsFileMenuOpen(false); setActiveMenu(null); setOpenColorPickerId(null); setActiveColumnMenu(null); setIsChangeTypeOpen(false); setIsAddColMenuOpen(false);
         setActiveStatusDropdown(null); // סגירה אוטומטית של תפריט הסטטוס בלחיצה בחוץ
       }
     }
