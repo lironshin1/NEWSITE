@@ -81,7 +81,7 @@ function MainLayout() {
   
   const columns = currentBoard?.columns || { 
     item: 'ITEM', status: 'סטטוס', text: 'טקסט', number: 'מספר',
-    date: 'ציר זמן', time: 'זמן', formula: 'נוסחה'
+    date: 'צי�� זמן', time: 'זמן', formula: 'נוסחה'
   };
 
   const extraFixedColumnsWidth = 40 + 8;
@@ -314,7 +314,7 @@ function MainLayout() {
             <span>⚛</span><span style={{ fontSize: '11px', letterSpacing: '0.5px' }}>JUNE</span>
           </div>
           <div className="file-menu-container no-drag" style={{ position: 'relative' }}>
-            <span onClick={() => !isFileMenuOpen && setIsFileMenuOpen(true)} style={{ cursor: 'pointer', color: isFileMenuOpen ? '#38bdf8' : '#cbd5e1', fontWeight: 'bold', padding: '5px 10px', display: 'inline-block' }}>File</span>
+            <span onClick={() => setIsFileMenuOpen(!isFileMenuOpen)} style={{ cursor: 'pointer', color: isFileMenuOpen ? '#38bdf8' : '#cbd5e1', fontWeight: 'bold', padding: '5px 10px', display: 'inline-block' }}>File</span>
             {isFileMenuOpen && (
               <div style={{ position: 'absolute', right: 0, top: '28px', backgroundColor: '#0f172a', border: '1px solid #334155', borderRadius: '4px', padding: '5px 0', minWidth: '150px', display: 'flex', flexDirection: 'column', boxShadow: '0 10px 20px rgba(0,0,0,0.5)', zIndex: 120 }}>
                 <div onClick={() => { openTab('tasks', `ניהול משימות ${tabs.filter(t => t.type === 'tasks').length + 1}`); setIsFileMenuOpen(false); }} className="file-dropdown-item" style={{ padding: '8px 15px', cursor: 'pointer', color: '#38bdf8', fontWeight: 'bold', textAlign: 'right', borderBottom: '1px solid #233142' }}>＋ טאב משימות חדש</div>
